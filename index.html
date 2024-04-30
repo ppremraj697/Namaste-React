@@ -13,12 +13,23 @@
         <h1>Hello World!</h1>
     </div>
 
+    <!-- root for JavaScript -->
     <div id="root"></div>
 
+    <!-- root for react -->
     <div id="root1">
-        <h1>I'm already here to ROCK!!!</h1>
+        <h1>Not Rendered</h1>
     </div>
-    <div id="nestedReactElement"></div>
+
+    <!-- root for nestedReact -->
+    <div id="nestedReactElement">
+        <h1>Not Rendered</h1>
+    </div>
+
+    <!-- root for jsx -->
+    <div id="jsxRoot" class="root">
+        <h1>Not Rendered</h1>
+    </div>
 
     <script>
         const heading = document.createElement("h1");//Parameter is HTML tag
@@ -27,6 +38,7 @@
         const root = document.getElementById("root");
         console.log("root: ", root)
         console.log("typeof root", typeof root)
+        console.log("typeof heading", typeof heading)
         root.appendChild(heading);//parameter is HTML tag
     </script>
 
