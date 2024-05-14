@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello World!</h1>
+    </div>
+
+    <!-- root for JavaScript -->
+    <div id="root"></div>
+
+    <!-- root for react -->
+    <div id="root1">
+      <h1>Not Rendered</h1>
+    </div>
+
+    <!-- root for nestedReact -->
+    <div id="nestedReactElement">
+      <h1>Not Rendered</h1>
+    </div>
+
+    <!-- root for jsx -->
+    <div id="jsxRoot" class="root">
+      <h1>Not Rendered</h1>
+    </div>
+
+    <!-- root for fxnalComp -->
+    <div id="functionalComponentRoot">
+      <h1>Not Rendered</h1>
+    </div>
+
+    <script>
+      const heading = document.createElement("h1"); //Parameter is HTML tag
+      heading.innerHTML = "Hello World from JavaScript!!";
+
+      const root = document.getElementById("root");
+      console.log("root: ", root);
+      console.log("typeof root", typeof root);
+      console.log("typeof heading", typeof heading);
+      root.appendChild(heading); //parameter is HTML tag
+    </script>
+
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> -->
+    <!-- <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+    <script type="module" src="./App_Practice.js"></script>
+  </body>
+</html>
