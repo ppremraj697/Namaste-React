@@ -56,3 +56,8 @@ border: 1px solid black;
 .res-img{
     width: 100%;
 }
+
+.top-rated-restaurant{
+    margin: 10px;
+    cursor: pointer;
+}
