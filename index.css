@@ -1,80 +1,84 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,body{
-    width: 100%;
-    height: 100%;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    align-items: center;
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  align-items: center;
 }
 
-.logo{
-    width: 200px;
+.logo {
+  width: 200px;
 }
 
-.nav-items ul{
-    display: flex;
-    padding: 0px 50px;
-    font-size: 17px;
+.nav-items ul {
+  display: flex;
+  padding: 0px 50px;
+  font-size: 17px;
 }
 
-.nav-items ul li{
-    padding: 10px;
-    margin: 10px;
-    list-style-type: none;
+.nav-items ul li {
+  padding: 10px;
+  margin: 10px;
+  list-style-type: none;
 }
 
-.restaurant-card{
-    margin: 10px;
-    width: 200px;
-    padding: 5px;
+.restaurant-card {
+  margin: 10px;
+  width: 200px;
+  padding: 5px;
 }
 
-.restaurant-container{
-    display: flex;
-    flex-wrap: wrap;
+.restaurant-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.restaurant-card:hover{
-cursor: pointer;
-border: 1px solid black;
+.restaurant-card:hover {
+  cursor: pointer;
+  border: 1px solid black;
 }
 
-
-.search{
-    padding: 20px;
+.search {
+  padding: 20px;
 }
 
-.res-img{
-    width: 100%;
+.res-img {
+  width: 100%;
 }
 
-.top-rated-restaurant{
-    margin: 10px;
-    cursor: pointer;
+.top-rated-restaurant {
+  margin: 10px;
+  cursor: pointer;
 }
 
-.shimmer-container{
-    display: flex;
-    flex-wrap: wrap;
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.shimmer-card{
-   width: 200px;
-   height: 400px;
-   margin: 20px;
-   background-color: #f0f0f0; 
+.shimmer-card {
+  width: 200px;
+  height: 400px;
+  margin: 20px;
+  background-color: #f0f0f0;
 }
 
-.login-btn{
-    padding: 0 20px;
-    cursor: pointer;
+.login-btn {
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.filter {
+  display: flex;
 }
