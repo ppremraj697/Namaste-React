@@ -7,11 +7,11 @@ const About = () => {
       <h1>This is About Page</h1>
       <h2>This is Namaste React Web Series</h2>
       <h2>Our Team</h2>
-      <TeamMember
+      {/* <TeamMember
         name="Premraj Patil(functional component)"
         location="Pune"
         contact="premraj-patil-a7785b207"
-      />
+      /> */}
       <TeamMemberClass
         name="Aniket Tarale(class component)"
         location="Pune"
