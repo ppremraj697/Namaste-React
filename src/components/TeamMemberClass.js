@@ -7,10 +7,16 @@ class TeamMemberClass extends React.Component {
     this.state = {
       count: 0,
     };
+    console.log(this.props.name, "Child Constructor");
+  }
+
+  componentDidMount() {
+    console.log(this.props.name, "Child Component Did Mount");
   }
 
   render() {
     const { name, location, contact } = this.props;
+    console.log(this.props.name, "Child Render");
     return (
       <div className="team-member-card">
         <h1>Count: {this.state.count}</h1>
@@ -21,6 +27,7 @@ class TeamMemberClass extends React.Component {
             //If we want to update multiple state variables upon the click of the button, it can be done in the below statement only
             this.setState({ count: this.state.count + 1 });
           }}
+          className="count-btn"
         >
           Count Increase
         </button>
